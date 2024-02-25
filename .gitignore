@@ -1,0 +1,10 @@
+/node_modules/
+/resources/
+/.vscode
+/webpack.config.js
+/src/frontend/javascript/
+/src/frontend/css/
+/package-lock.json
+/package.json
+/error.log
+/out.log

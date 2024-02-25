@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=$("#status"),e=$("#msg"),r=t.text(),a={500:"Oops, we have an internal server error. Sorry for that.",404:"Mhhhhmm, we can't find that page. Sorry."};$(document).ready((async()=>{e.text(a[r])}))})();

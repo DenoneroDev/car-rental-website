@@ -1,0 +1,256 @@
+/* MD SCREENS */
+@media only screen and (max-width: 1800px) {
+	#choose-us-image {
+		width: 900px;
+	}
+	#landing {
+    	margin: 84px 0;
+    	padding: 100px 40px;
+	}
+	#landing-text {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	#choose-us-image {
+		width: 600px;
+	}
+
+	.choose-us-item {
+		width: 300px;
+	}
+
+	.step-description {
+		width: 400px;
+	}
+
+	#car-content {
+		width: calc(100% - 40px);
+	}
+	#about-us-content .container {
+		width: calc(100% - 200px);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#search {
+		border: none;
+		width: auto;
+	}
+
+	#search-input {
+		display: none;
+	}
+
+	.number p {
+		display: none;
+	}
+
+	#filter {
+		width: calc(100% - 80px);
+	}
+
+	.filter-section-title {
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	#filter-button {
+		text-align: center;
+	}
+
+	.gray-title {
+		margin-bottom: 60px;
+	}
+
+	#choose-us {
+		display: grid;
+		justify-items: center;
+	}
+
+	#choose-us-content {
+		display: grid;
+		justify-items: center;
+	}
+
+	#choose-us-title-contetnt {
+		width: 100%;
+	}
+
+	#choose-us-gray-title {
+		text-align: center;
+	}
+
+	#choose-us-title {
+		text-align: center;
+	}
+
+	#choose-us-items {
+		display: grid;
+		justify-items: center;
+	}
+
+	.choose-us-item {
+		display: flex;
+		width: 600px;
+	}
+
+	footer {
+		display: grid;
+		justify-items: center;
+    	width: 100%;
+    	justify-content: center;
+		gap: 30px;
+	}
+
+	#footer-number {
+		margin-top: 50px;
+	}
+
+	.ql-container.ql-snow {
+		padding: 0 20px;
+		width: calc(100% - 40px);
+		min-width: auto;
+	}
+	#about-us-content #header-text {
+		width: 100%;
+		text-align: center;
+		padding: 50px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#navigation {
+		display: none;
+	}
+	#header-contact {
+		display: none;
+	}
+
+	.number p {
+		display: block;
+	}
+
+	#menue-button {
+		display: block;
+	}
+
+	.category {
+		color: var(--black);
+		display: none;
+		text-decoration: none;
+		margin-bottom: 10px;
+	}
+
+	.choose-us-item {
+		width: 350px;
+	}
+
+	#choose-us-image {
+		width: 400px;
+	}
+
+	#choose-us-title-contetnt {
+		width: calc(100% - 40px);
+	}
+
+	.filter-actions,
+	#sub-actions {
+		width: 100% !important;
+	}
+
+	#more-options-button,
+	#reset-button {
+		margin-bottom: 0 !important;
+	}
+
+	#image-container button {
+		display: none;
+	}
+
+	#image-list {
+		display: none;
+	}
+
+	#image-area #image {
+		max-height: 250px;
+		width: 100%;
+		border-radius: 7px;
+	}
+
+	#image-area {
+		border-radius: 7px 7px 0 0;
+	}
+
+	#info-area #infos {
+		margin: 0;
+		border-radius: 0;
+		padding-top: 0;
+	}
+	#about-us-content .container {
+		width: calc(100% - 40px);
+	}
+	#about-us-content input,
+	#rate input {
+		max-width: 100% !important;
+	}
+	#landing {
+    	padding: 50px 40px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#choose-us-image {
+		width: 100%;
+	}
+
+	.step-description {
+		width: 100%;
+	}
+
+	footer {
+		padding: 30px 0;
+	}
+
+	#footer-number p {
+		display: none;
+	}
+
+	#copyright {
+		font-size: 16px;
+	}
+
+	.choose-us-item {
+		width: calc(100% - 40px);
+	}
+
+	#sub-actions {
+		align-content: center !important;
+		flex-direction: column;
+		height: 100px;
+	}
+
+	#more-options-button,
+	#reset-button {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+}
+@media only screen and (max-width: 465px) {
+	#save {
+		margin-top: 15px;
+	}
+	#car-content #actions {
+		flex-direction: column;
+	}
+	#starst {
+		justify-content: center;
+	}
+	#ratings .rating .stars img {
+		height: 20px;
+	}
+	#ratings .rating .name {
+		max-width: 130px;
+	}
+}

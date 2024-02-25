@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="[/= language /]">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="DenoneroDev">
+		[/ if(language === "cs") { /]
+			<title>VM MAXIMA CAR Rentals | Prozkoumejte svou cestu</title>
+			<meta name="description" content="Začněte svou cestu s VM MAXIMA CAR Rentals. Prozkoumejte vozidla, ceny a rezervujte online. Řiďte se dnes s jistotou!">
+			<meta name="keywords" content="Auto prenájom Rakúsko, Autopožičovňa Rakúsko, Auto na prenájom Rakúsko, Auto prenájom Slovinsko, Autopožičovňa Slovinsko, Auto na prenájom Slovinsko, Prenájom lacných áut, Ponuky prenájmu áut, Najlepšie ceny prenájmu áut, Možnosti prenájmu áut, vm-maxima-car prenájom áut, vm-car autopožičovňa, Rezervácia auta na prenájom, Prenájom áut spoločnosť, Služby prenájmu áut">
+		[/ } else if(language === "de") { /]
+			<title>VM MAXIMA CAR Rentals | Entdecken Sie Ihre Reise</title>
+			<meta name="description" content="Beginnen Sie Ihre Reise mit VM MAXIMA CAR Rentals. Erkunden Sie Fahrzeuge, Preise und buchen Sie online. Fahren Sie heute mit Vertrauen!">
+			<meta name="keywords" content="Autovermietung Österreich, Autoverleih Österreich, Auto mieten Österreich, Autovermietung Slowenien, Autoverleih Slowenien, Auto mieten Slowenien, Günstige Autovermietung, Autovermietung Angebote, Beste Autovermietung Preise, Mietwagenoptionen, vm-maxima-car Vermietung, vm-car Autoverleih, Autovermietung buchen, Autovermietung Firma, Autovermietungsdienstleistungen">
+		[/ } else { /]
+			<title>VM MAXIMA CAR Rentals | Explore Your Journey</title>
+			<meta name="description" content="Begin your journey with VM MAXIMA CAR Rentals. Explore vehicles, rates, and book online. Drive with confidence today!">
+			<meta name="keywords" content="Car rental Austria, Car hire Austria, Rent a car Austria, Car rental Slovenia, Car hire Slovenia, Rent a car Slovenia, Affordable car rentals, Car rental deals, Best car rental rates, Rental car options, vm-maxima-car rentals, vm-car hire, Car rental booking, Car rental company, Car rental services">
+		[/ } /]
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./bundles/css/home.bundle.css" />
+		<link rel="icon" sizes="128x128" type="image/x-icon" href="/images/icon.ico">
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="128x128" href="/images/icon.ico">
+		<meta name="msapplication-TileImage" content="/images/icon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="robots" content="index, follow">
+		<base href="https://vm-car.eu">
+		<meta name="copyright" content="Vm Maxima Car">
+		<meta name="revisit-after" content="7 days">
+		[/ if(language === "cs") { /]
+			<meta name="audience" content="cestující">
+			<meta name="audience" content="obchodní cestující">
+			<meta name="audience" content="dovolenkáři">
+			<meta name="audience" content="rodiny">
+			<meta name="audience" content="turisté">
+			<meta name="audience" content="návštěvníci města">
+		[/ } else if(language === "de") { /]
+			<meta name="audience" content="Reisende">
+			<meta name="audience" content="Geschäftsreisende">
+			<meta name="audience" content="Urlauber">
+			<meta name="audience" content="Familien">
+			<meta name="audience" content="Touristen">
+			<meta name="audience" content="Stadtbesucher">
+		[/ } else { /]
+			<meta name="audience" content="Travelers">
+			<meta name="audience" content="Business Travelers">
+			<meta name="audience" content="Vacationers">
+			<meta name="audience" content="Families">
+			<meta name="audience" content="Tourists">
+			<meta name="audience" content="City Visitors">
+		[/ } /]
+
+	</head>
+	<body>
+		[/- include("../partials/header") /] [/-
+		include("../partials/landing")/] [/- include("../partials/popular-cars")
+		/] [/- include("../partials/choose-us") /] 
+		[/- include("../partials/rating") /]
+		[/- include("../partials/steps") /]
+		[/- include("../partials/footer") /]
+		[/- include("../partials/loading") /]
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+		<script src="/bundles/javascript/home.bundle.js"></script>
+	</body>
+</html>
+<!-- 43 6F 64 65 64 20 63 6F 6D 70 6C 65 74 65 6C 79 20 62 79 20 44 65 6E 6F 6E 65 72 6F 44 65 76 -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="[/= language /]">
+<head>
+	<meta charset="UTF-8">
+	<title>VM CAR | Favorites</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" />
+	<link rel="stylesheet" href="./bundles/css/favorites.bundle.css" />
+	<link rel="icon" sizes="128x128" type="image/x-icon" href="/images/icon.ico">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="128x128" href="/images/icon.ico">
+	<meta name="msapplication-TileImage" content="/images/icon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="robots" content="noindex, nofollow">
+	<base href="/favorites/">
+</head>
+<body>
+	[/- include("../partials/header") /]
+	<div
+		class="wrapper"
+		style="flex-grow: 1; display: flex; flex-direction: column">
+		<div id="cars-container">
+			<div class="wrapper" id="error" style="margin-top: 0">
+				<p id="status">404</p>
+				<p id="msg" data-langKey="error">Hmm.. You don't have saved cars!</p>
+			</div>
+			<div id="cars">
+			</div>
+		</div>
+		<!-- 43 6F 64 65 64 20 63 6F 6D 70 6C 65 74 65 6C 79 20 62 79 20 44 65 6E 6F 6E 65 72 6F 44 65 76 -->
+	</div>
+	[/- include("../partials/footer") /]
+		[/- include("../partials/loading") /]
+	<script
+		src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+	<script src="/bundles/javascript/favorites.bundle.js"></script>
+</body>
+</html>

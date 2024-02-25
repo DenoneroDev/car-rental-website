@@ -1,0 +1,35 @@
+@keyframes movement {
+  0% {
+    transform: translate3d(0, -25px, 0);
+    z-index: 0;
+  }
+  50% {
+    transform: translate3d(0, 25px, 0);
+    z-index: 10;
+  }
+  100% {
+    transform: translate3d(0, -25px, 0);
+    z-index: -5;
+  }
+}
+
+@keyframes size-opacity {
+  0% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: .35;
+    transform: scale(.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

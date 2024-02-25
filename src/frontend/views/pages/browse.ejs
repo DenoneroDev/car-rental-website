@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="[/= language /]">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>VM CAR | Browse</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" />
+		<link rel="stylesheet" href="../bundles/css/browse.bundle.css">
+		<link rel="icon" sizes="128x128" type="image/x-icon" href="/images/icon.ico">
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="128x128" href="/images/icon.ico">
+		<meta name="msapplication-TileImage" content="/images/icon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="robots" content="noindex, nofollow">
+		<base href="/browse/">
+		<meta name="copyright" content="Vm Maxima Car">
+	</head>
+
+	<body>
+		[/- include("../partials/header") /]
+		<div class="wrapper">
+			<div id="cars-container">
+				<div style="margin-top: 200px">
+					[/- include("../partials/filter") /]
+				</div>
+				<div class="wrapper" id="error">
+					<p id="status">404</p>
+					<p id="msg">Hmm.. We don't have a car with this properties! Sorry!</p>
+				</div>
+				<div id="cars" style="margin-top: 100px;">
+				</div>
+				<p id="pages"></p>
+				<div id="pagination">
+					<a id="previous" class="pagination-link" data-langKey="pagination-previous">Back</a>
+					<input
+						type="number"
+						id="page-input"
+						min="1"
+						max="5"
+						value="1"
+						class="pagination-input" />
+					<a id="go" class="pagination-link" data-langKey="pagination-go">Go</a>
+					<a id="next" class="pagination-link" data-langKey="pagination-next">Next</a>
+				</div>
+			</div>
+		</div>
+		[/- include("../partials/footer") /] [/- include("../partials/loading")
+		/]
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+		<script src="/bundles/javascript/browse.bundle.js"></script>
+	</body>
+</html>
+<!-- 43 6F 64 65 64 20 63 6F 6D 70 6C 65 74 65 6C 79 20 62 79 20 44 65 6E 6F 6E 65 72 6F 44 65 76 -->

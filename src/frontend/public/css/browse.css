@@ -1,0 +1,42 @@
+@import "general.css";
+@import "animation.css";
+
+#pages {
+	text-align: center;
+	margin-bottom: 7px;
+	font-size: 16px;
+}
+
+#pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.pagination-input {
+	width: 60px;
+	text-align: center;
+}
+
+.pagination-input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.pagination-link {
+	display: none;
+	padding: 5px 10px;
+	margin: 0 5px;
+	background-color: var(--red);
+	color: var(--white);
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.pagination-link:hover {
+	opacity: 0.6;
+}
+#page-input {
+	font-size: 16px;
+}

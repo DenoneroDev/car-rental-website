@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="[/= language /]">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>VM CAR | About Us</title>
+		<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet" /> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" />
+		<link rel="stylesheet" href="/bundles/css/about-us.bundle.css">
+		<link rel="icon" sizes="128x128" type="image/x-icon" href="/images/icon.ico">
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="128x128" href="/images/icon.ico">
+		<meta name="msapplication-TileImage" content="/images/icon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="robots" content="noindex, nofollow">
+		<base href="/about-us/">
+		<meta name="copyright" content="Vm Maxima Car">
+	</head>
+	<body>
+		[/- include("../partials/header") /]
+		<div class="wrapper" style="flex-grow: 1; margin-top: 80px">
+			<div id="about-us-content">
+				<p id="header-text" data-langKey="navigation-aboutus">about us</p>
+				<div class="container">
+					<p id="title" data-langKey="welcome-title">Welcome to vm-car.com</p>
+					<p class="text" data-langKey="welcome-text">
+At our place, you will find the perfect solution for your mobility needs. Whether you need a comfortable vehicle for a business trip, a spacious car for a family outing, or just a cool car to stylishly move around the city - we have the ideal vehicle for you!
+					</p>
+				</div>
+				<div class="container">
+					<p id="title" data-langKey="what-about-title">What we're about</p>
+					<p class="text" data-langKey="what-about-text">
+Our goal at AutoRentX is to provide you with the freedom to explore the world by offering high-quality and reliable vehicles. We believe that traveling is more than just getting from A to B - it's about discovering new horizons and experiencing unforgettable moments on the road.
+					</p>
+					<div id="component">
+						<div class="item">
+							<img src="/images/globe.svg" />
+							<p class="title" data-langKey="what-about-comp-one-title">
+								Exceptional Mobility: Unleashing the Freedom of Car Rental.
+							</p>
+							<p class="description" data-langKey="what-about-comp-one-text">
+Our focus is on providing personalized experiences and offering a wide range of vehicles and services to meet the individual needs of each customer.
+							</p>
+						</div>
+						<div class="item">
+							<img src="/images/key.svg" />
+							<p class="title" data-langKey="what-about-comp-two-title">
+								Customer-Centric Approach: Tailored Solutions for Every Journey.
+							</p>
+							<p class="description" data-langKey="what-about-comp-two-text">
+Our focus is on delivering personalized experiences, offering a wide range of vehicles and services to cater to the unique needs of each customer. With a commitment to reliability and trust, we strive to build long-term relationships with our customers by consistently delivering quality vehicles and excellent customer service.
+							</p>
+						</div>
+						<div class="item">
+							<img src="/images/heart.png" />
+							<p class="title" data-langKey="what-about-comp-three-title">
+								Reliability and Trust: Your Trusted Partner in
+								Car Rental.
+							</p>
+							<p class="description" data-langKey="what-about-comp-three-text">
+								With a commitment to reliability and trust, we
+								strive to build long-term relationships with our
+								customers by consistently delivering quality
+								vehicles and excellent customer service.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<p id="title" data-langKey="who-title">Who we are</p>
+					<p class="text" data-langKey="who-text">
+At our company, reliability and trust are our top priorities. We understand that choosing a rental car is a matter of trust, and that's why we take pride in being your trusted partner in car rental. Our commitment to excellence is reflected in the quality of our vehicles and our excellent customer service.<br><br>Our experienced team works tirelessly to understand your individual needs and provide you with the best possible mobility solutions. Whether you are traveling for business or leisure, we are here to support you with our extensive fleet of vehicles and first-class services.
+					</p>
+				</div>
+				<div class="container">
+					<p id="title" data-langKey="rate-title">Rate our service</p>
+					<input
+						data-langKey="rate-input-name"
+						id="name"
+						type="text"
+						placeholder="Name"
+						maxlength="50" />
+					<input
+						id="email"
+						type="email"
+						placeholder="E-Mail (Only for anti-spam)"
+						maxlength="100" 
+						data-langKey="rate-input-email"
+						/>
+					<div id="stars">
+						<img
+							src="/images/star.png"
+							data-index="0"
+							class="selected" />
+						<img
+							src="/images/star.png"
+							data-index="1"
+							class="selected" />
+						<img
+							src="/images/star.png"
+							data-index="2"
+							class="selected" />
+						<img src="/images/star.png" data-index="3" />
+						<img src="/images/star.png" data-index="4" />
+					</div>
+					<textarea
+						id="comment"
+						placeholder="Comment"
+						maxlength="500" data-langKey="rate-input-comment"></textarea>
+					<button id="ratingBtn" data-langKey="rate-btn">post</button>
+				</div>
+			</div>
+		</div>
+		[/- include("../partials/footer") /] [/- include("../partials/loading")
+		/]
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="/bundles/javascript/about-us.bundle.js"></script>
+	</body>
+</html>
+<!-- 43 6F 64 65 64 20 63 6F 6D 70 6C 65 74 65 6C 79 20 62 79 20 44 65 6E 6F 6E 65 72 6F 44 65 76 -->

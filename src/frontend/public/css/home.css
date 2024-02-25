@@ -1,0 +1,208 @@
+@import "./general.css";
+@import "./animation.css";
+
+#landing {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 150px;
+	gap: 30px;
+	overflow: hidden;
+}
+
+#landing-text {
+	z-index: 1;
+	font-size: clamp(30px, calc(30px + 1vw), 70px);
+	width: 830px;
+	font-family: var(--title-font);
+}
+
+#landing-text span {
+	color: var(--red);
+	text-transform: uppercase;
+}
+
+#landing-image {
+    -webkit-user-drag: none;
+	max-width: 800px;
+	width: 100%;
+
+}
+
+#popular-cars {
+	width: 100%;
+	position: relative;
+	display: grid;
+	justify-content: center;
+	padding: 100px 0;
+	justify-items: center;
+}
+
+.gray-title {
+	font-size: 20px;
+	color: var(--light-gray);
+	font-weight: 900;
+	text-align: center;
+	margin: 50px 0;
+	font-family: var(--title-font);
+}
+
+#popular-cars-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#more-cars-button {
+	border-radius: 20px;
+	background-color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid var(--black);
+	padding: 10px 70px;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#more-cars-title {
+	font-size: 17px;
+}
+
+#more-cars-image {
+	height: 15px;
+	width: 15px;
+	margin-left: 20px;
+}
+
+#choose-us {
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	padding: 50px 0;
+	gap: 50px;
+}
+
+#choose-us-image {
+	transform: scaleX(-1);
+}
+
+#choose-us-gray-title {
+	margin: 0;
+	text-align: start;
+}
+
+#choose-us-title {
+	font-size: 30px;
+	font-weight: 900;
+	margin-bottom: 30px;
+	font-family: var(--title-font);
+}
+
+.choose-us-item {
+	width: 400px;
+	display: flex;
+	margin-top: 40px;
+}
+
+.choose-us-icon {
+	height: 50px;
+	margin-right: 20px;
+}
+
+.choose-us-title {
+	font-size: 22px;
+	font-weight: 600;
+	font-family: var(--title-font);
+}
+
+.choose-us-description {
+	font-size: 20px;
+}
+
+#choose-us-title-contetnt {
+	max-width: 350px;
+}
+
+#steps {
+    text-align: center;
+    padding: 100px 0;
+    display: grid;
+    justify-items: center;
+}
+
+#steps-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    max-width: 1150px;
+	padding: 0 20px;
+	font-family: var(--title-font);
+}
+
+#step-content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.step {
+	flex-basis: 20%;
+	margin: 0 20px;
+}
+
+.step-number-image {
+	margin-top: 70px;
+}
+
+.step-title {
+	font-size: 30px;
+	font-weight: 600;
+	font-family: var(--title-font);
+}
+
+.step-description {
+	font-size: 22px;
+}
+.website-rating {
+	border-radius: 20px;
+	padding: 30px;
+	font-size: 20px;
+	display: grid;
+	margin: 0 auto;
+	gap: 30px;
+	align-items: center;
+	justify-items: center;
+	width: fill;
+	max-height: 400px;
+	cursor: grab;
+}
+.website-rating #name {
+	font-size: 28px;
+	font-weight: bold;
+	height: fit-content;
+	font-family: var(--title-font);
+}
+.website-rating #comment {
+	max-width: 550px;
+	text-align: center;
+}
+.website-rating .stars img {
+	height: 32px;
+}
+#website-ratings {
+	padding: 50px 0;
+	max-width: 1000px;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	height: fit-content;
+}

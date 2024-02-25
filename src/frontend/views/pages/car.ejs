@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="[/= language /]">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>VM MAXIMA CAR Rentals | Car</title>
+		<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css" />
+		<link rel="stylesheet" href="/bundles/css/car.bundle.css">
+		<link rel="icon" sizes="128x128" type="image/x-icon" href="/images/icon.ico">
+		<link rel="apple-touch-icon" type="image/x-icon" sizes="128x128" href="/images/icon.ico">
+		<meta name="msapplication-TileImage" content="/images/icon.ico">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="robots" content="index, nofollow">
+		<base href="/car/">
+		<meta name="copyright" content="Vm Maxima Car">
+		<meta name="revisit-after" content="7 days">
+	</head>
+	<body>
+		[/- include("../partials/header") /]
+				<div class="wrapper" style="flex-grow: 1; margin-top: 120px">
+			<div id="car-content">
+				<div id="image-area">
+					<div id="top">
+						<div>
+							<p id="title"></p>
+							<p id="id"></p>
+						</div>
+						<div id="top-stars">
+							<img src="/images/star.png">
+							<p id="car-rating"></p>
+							<p id="car-ratings"></p>
+						</div>
+					</div>
+					<div id="image-container" class="swiper">
+						<button id="prevButton">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<div class="swiper-wrapper">
+							
+						</div>
+						<button id="nextButton">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+						<div class="swiper-pagination"></div>
+					</div>
+
+					<div id="image-list">
+						<div id="viewport">
+							<div id="content">
+								<div id="content-inner">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="actions">
+					<div id="save"></div>
+					[/ if(language === "de") { /]
+					<a id="call" href="tel:+43 676 7201 696" data-langKey="button">get this car</a>
+					[/ } else if(language === "cs" || language === "en") { /]
+					<a id="call" href="tel:+421 917 981 746" data-langKey="button">get this car</a>
+					[/ } /]
+				</div>
+				<div id="info-area">
+					<div id="infos">
+						<div id="description-area">
+							<p class="info-titles first-info-title" data-langKey="info-description-title">
+								Description
+							</p>
+							<div id="description">
+								<div id="quill-editor" style="	padding: 0; box-shadow: none; width: 100%; min-width: auto;"></div>
+							</div>
+						</div>
+						<div id="detail-area">
+							<p class="info-titles" data-langKey="info-details-title">Details</p>
+							<!-- DETAILS -->
+						</div>
+						<div id="packet-area">
+							<p class="info-titles" data-langKey="info-packets-title">Packets</p>
+							<div id="packets">
+								<!-- PACKETS -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="rate">
+					<p id="title" data-langKey="rate-title">Rate this car</p>
+					<input
+						id="name"
+						type="text"
+						placeholder="Name"
+						maxlength="50" data-langKey="rate-input-name"/>
+					<input
+						id="email"
+						type="email"
+						placeholder="E-Mail (Only for anti-spam)"
+						maxlength="100" data-langKey="rate-input-email"/>
+					<div id="stars">
+						<img
+							src="/images/star.png"
+							data-index="0"
+							class="selected" />
+						<img
+							src="/images/star.png"
+							data-index="1"
+							class="selected" />
+						<img
+							src="/images/star.png"
+							data-index="2"
+							class="selected" />
+						<img src="/images/star.png" data-index="3" />
+						<img src="/images/star.png" data-index="4" />
+					</div>
+					<textarea
+						id="comment"
+						placeholder="Comment"
+						maxlength="500" data-langKey="rate-input-comment"></textarea>
+					<button id="ratingBtn" data-langKey="rate-btn">Commit</button>
+					<div id="ratings"></div>
+				</div>
+			</div>
+		</div>
+		[/- include("../partials/footer") /] [/- include("../partials/loading")
+		/]
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fullscreen-plugin/1.1.5/jquery.fullscreen-min.js" integrity="sha512-jsd+htuEeegz5cCVylsuWVavTlEU9flgjEA5FCMCMxfU6SReX5z/gaeTcorug0LNiyFUh0QEOQtZjHkWDXlAzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+		<script src="/bundles/javascript/car.bundle.js"></script>
+	</body>
+</html>
+<!-- 43 6F 64 65 64 20 63 6F 6D 70 6C 65 74 65 6C 79 20 62 79 20 44 65 6E 6F 6E 65 72 6F 44 65 76 -->
